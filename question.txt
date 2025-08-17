@@ -1,0 +1,4 @@
+1. Count how many rows have Age greater than 30.
+2. Find the most expensive movie in the dataset.
+3. Compute the correlation coefficient between Rank and Peak.
+4. Generate a scatterplot of Rank vs Peak with a red dotted regression line.
