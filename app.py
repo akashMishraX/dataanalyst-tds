@@ -2491,7 +2491,7 @@ def create_data_summary(csv_data: list,
 @app.get("/")
 def root():
     return {"message": "Hello Railway"}
-    
+
 @app.post("/aianalyst/")
 async def aianalyst(request: Request):
     # Parse form data to get all files regardless of field names
@@ -3806,7 +3806,3 @@ async def aianalyst(request: Request):
         content=fake_answer["choices"][0]["message"]["content"],
         media_type="application/json"
     )
-
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
