@@ -2488,6 +2488,10 @@ def create_data_summary(csv_data: list,
     summary["total_sources"] = len(identifiers)
     return summary
 
+@app.get("/")
+def root():
+    return {"message": "Hello Railway"}
+    
 @app.post("/aianalyst/")
 async def aianalyst(request: Request):
     # Parse form data to get all files regardless of field names
